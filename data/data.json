@@ -1,0 +1,24 @@
+{
+    "1": {
+        "crop_name": "wheat",
+        "crop_type":"Rabi",
+        "general" : "Wheat is grown on 13 percent of the cropped area of India. Next to rice, wheat is the most important food-grain of India and is the staple food of millions of Indians, particularly in the northern and north-western parts of the country . It is rich in proteins, vitamins and carbohydrates and provides balanced food. India is the fourth largest producer of wheat in the world after Russia, the USA and China and accounts for 8.7% of the world’s total production of wheat. ",
+        "temp":"21-26",
+        "rainfall": "75 cm (max)",
+        "land_prep":"After harvest of previous crop, the field should be ploughed with disc or mould board plough. Field is usually prepared by giving one deep plough with iron plough followed by two or three times local plough and planking. Carried out plough in evening time and kept furrow open whole night to absorb some moisture from dew. Planking should be done after each plough early in the morning.",
+        "time":"Mid-OCTOBER - Mid-NOVEMBER" ,
+        "seed_rate":"45 kg/acre",
+        "variety" : {
+            "PBW 752": "Late variety. This variety is suitable for sowing in irrigated conditions. It gives an average yield of 19.2qtl/acre.",
+            "PBW 1 Zn:": "The plant of this variety attains the height of 103 cm. the crop is ready to harvest in 151 days. It gives an average of 22.5 qtl/acre of crop yield.",
+            "UNNAT PBW 343:": "Suitable for irrigated and timely sown areas. Ready to harvest in 155 days. It is resistant to lodging, water logging conditions. It is also resistant to karnal bunt and tolerant to blight. It gives average yield of 23.2 qtl/acre.",
+            "WH 542:": "It is suitable for timely sown, irrigated areas. Ready to harvest in 135-145 days. It is resistant to stripe rust, leaf rust and karnal bunt. It give average yield of 20 qtl/acre.",
+            "PBW 725:": "It is dwarf variety, released by Punjab Agriculture University. It is suitable for timely sown irrigated areas. It is resistant to yellow and brown rust. Its grains are amber, hard and medium bold. It is ready to harvest in 155 days. It gives average yield of 23 qtl/acre. "
+
+        }
+    }
+  
+
+
+   
+}
