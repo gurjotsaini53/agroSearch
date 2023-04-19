@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CodePen - Add to cart javascript</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./seed.css" />
+    <link rel="stylesheet" href="../css/styles.css">
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <nav class="topbar">
+      <div class="container">
+        <a href="#" class="logo">
+          <!-- <img src="/images/logo.png" alt="logo" id="logo"> -->
+
+          <span id="logo-agro"> agro<span id="logo-search">Search</span> </span>
+        </a>
+        <ul class="menu">
+          <li><a href="./home.html">Home</a></li>
+          <li><a href="#">Seeds</a></li>
+          <li><a href="#">Fertilizers</a></li>
+          <li><a href="#">Machines</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top ">
+        
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto"></ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              id="search_field"
+              placeholder="Search"
+              aria-label="Search"
+            />
+          </form>
+          <button
+            type="button"
+            class="btn btn-success my-2 my-sm-0"
+            data-toggle="modal"
+            data-target="#staticBackdrop"
+          >
+            <i class="fas fa-shopping-cart total-count"></i>
+          </button>
+        </div>
+      </nav>
+      <section>
+        <div class="featured-area pt-100 pb-70">
+          <div class="container">
+            <div class="tab featured-tab-area">
+              <div class="row justify-content-center">
+                <div class="col-lg-5 col-md-8">
+                  <ul class="tabs active">
+                    <li class="">
+                      <a href="#"> All </a>
+                    </li>
+                    <li class="">
+                      <a href="#"> Wheat </a>
+                    </li>
+                    <li class="">
+                      <a href="#"> Maize </a>
+                    </li>
+                    <li class="">
+                      <a href="#"> Rice </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="tab_content current active pt-45">
+                <div class="tabs_item current">
+                  <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-6">
+                      <div class="featured-item">
+                        <div class="featured-item-img">
+                          <a href="#">
+                            <img src="./seedImages/wheat1.webp" alt="Images" />
+                          </a>
+                        </div>
+                        <div class="content">
+                          <h3><a href="#">Wheat</a></h3>
+                          <hr />
+                          <div class="content-in">
+                            <h4>₹ 1200</h4>
+                            <span>(4.9)<i class="fa fa-star"></i></span>
+                          </div>
+                          <hr />
+                          <div class="featured-content-list">
+                            <button
+                              type="button"
+                              data-name="Oxford"
+                              data-price="1200"
+                              class="default-btn border-radius-5"
+                            >
+                              Add to cart
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                      <div class="featured-item">
+                        <div class="featured-item-img">
+                          <a href="#">
+                            <img
+                              src="./seedImages/maize1.jpeg"
+                              alt="Images"
+                            />
+                          </a>
+                        </div>
+                        <div class="content">
+                          <h3><a href="#">Maize 1 </a></h3>
+                          <hr />
+                          <div class="content-in">
+                            <h4>₹ 459</h4>
+                            <span>(4.4)<i class="fa fa-star"></i></span>
+                          </div>
+                          <hr />
+                          <div class="featured-content-list">
+                            <button
+                              type="button"
+                              data-name="Tunic"
+                              data-price="459"
+                              class="default-btn border-radius-5"
+                            >
+                              Add to cart
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                      <div class="featured-item">
+                        <div class="featured-item-img">
+                          <a href="#">
+                            <img
+                              src="./seedImages/rice 1.jpeg"
+                              alt="Images"
+                            />
+                          </a>
+                        </div>
+                        <div class="content">
+                          <h3><a href="#">Rice 1 </a></h3>
+                          <hr />
+                          <div class="content-in">
+                            <h4>₹ 4059</h4>
+                            <span>(4.4)<i class="fa fa-star"></i></span>
+                          </div>
+                          <hr />
+                          <div class="featured-content-list">
+                            <button
+                              type="button"
+                              data-name="Huawei"
+                              data-price="4059"
+                              class="default-btn border-radius-5"
+                            >
+                              Add to cart
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                      <div class="featured-item">
+                        <div class="featured-item-img">
+                          <a href="#">
+                            <img src="./seedImages/wheat2.jpg" alt="Images" />
+                          </a>
+                        </div>
+                        <div class="content">
+                          <h3><a href="#">Wheat 2</a></h3>
+                          <hr />
+                          <div class="content-in">
+                            <h4>₹ 800</h4>
+                            <span>(4.9)<i class="fa fa-star"></i></span>
+                          </div>
+                          <hr />
+                          <div class="featured-content-list">
+                            <button
+                              type="button"
+                              data-name="Short-Sleeve"
+                              data-price="800"
+                              class="default-btn border-radius-5"
+                            >
+                              Add to cart
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                      <div class="featured-item">
+                        <div class="featured-item-img">
+                          <a href="#">
+                            <img
+                              src="./seedImages/maize2.jpeg"
+                              alt="Images"
+                            />
+                          </a>
+                        </div>
+                        <div class="content">
+                          <h3><a href="#">Maize 2</a></h3>
+                          <hr />
+                          <div class="content-in">
+                            <h4>₹ 2459</h4>
+                            <span>(4.4)<i class="fa fa-star"></i></span>
+                          </div>
+                          <hr />
+                          <div class="featured-content-list">
+                            <button
+                              type="button"
+                              data-name="Culotte"
+                              data-price="2459"
+                              class="default-btn border-radius-5"
+                            >
+                              Add to cart
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                      <div class="featured-item">
+                        <div class="featured-item-img">
+                          <a href="#">
+                            <img
+                              src="./seedImages/rice 2.jpeg"
+                              alt="Images"
+                            />
+                          </a>
+                        </div>
+                        <div class="content">
+                          <h3><a href="#">Rice 2</a></h3>
+                          <hr />
+                          <div class="content-in">
+                            <h4>₹ 1999</h4>
+                            <span>(4.4)<i class="fa fa-star"></i></span>
+                          </div>
+                          <hr />
+                          <div class="featured-content-list">
+                            <button
+                              type="button"
+                              data-name="FireBoltt"
+                              data-price="1999"
+                              class="default-btn border-radius-5"
+                            >
+                              Add to cart
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                      <div class="featured-item">
+                        <div class="featured-item-img">
+                          <a href="#">
+                            <img src="./seedImages/wheat3.jpeg" alt="Images" />
+                          </a>
+                        </div>
+                        <div class="content">
+                          <h3><a href="#">Wheat 3</a></h3>
+                          <hr />
+                          <div class="content-in">
+                            <h4>₹ 499</h4>
+                            <span>(4.9)<i class="fa fa-star"></i></span>
+                          </div>
+                          <hr />
+                          <div class="featured-content-list">
+                            <button
+                              type="button"
+                              data-name="CubanCollar"
+                              data-price="499"
+                              class="default-btn border-radius-5"
+                            >
+                              Add to cart
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                      <div class="featured-item">
+                        <div class="featured-item-img">
+                          <a href="#">
+                            <img
+                              src="./seedImages/maize3.jpeg"
+                              alt="Images"
+                            />
+                          </a>
+                        </div>
+                        <div class="content">
+                          <h3><a href="#">Maize 3</a></h3>
+                          <hr />
+                          <div class="content-in">
+                            <h4>₹ 1159</h4>
+                            <span>(4.0)<i class="fa fa-star"></i></span>
+                          </div>
+                          <hr />
+                          <div class="featured-content-list">
+                            <button
+                              type="button"
+                              data-name="Babydoll"
+                              data-price="1159"
+                              class="default-btn border-radius-5"
+                            >
+                              Add to cart
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                      <div class="featured-item">
+                        <div class="featured-item-img">
+                          <a href="#">
+                            <img
+                              src="./seedImages/rice 3.jpeg"
+                              alt="Images"
+                            />
+                          </a>
+                        </div>
+                        <div class="content">
+                          <h3><a href="#">Rice 3</a></h3>
+                          <hr />
+                          <div class="content-in">
+                            <h4>₹ 2059</h4>
+                            <span>(4.4)<i class="fa fa-star"></i></span>
+                          </div>
+                          <hr />
+                          <div class="featured-content-list">
+                            <button
+                              type="button"
+                              data-name="Google"
+                              data-price="2059"
+                              class="default-btn border-radius-5"
+                            >
+                              Add to cart
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                      <div class="featured-item">
+                        <div class="featured-item-img">
+                          <a href="#">
+                            <img src="./seedImages/wheat4.jpeg" alt="Images" />
+                          </a>
+                        </div>
+                        <div class="content">
+                          <h3><a href="#">Wheat 4</a></h3>
+                          <hr />
+                          <div class="content-in">
+                            <h4>₹ 700</h4>
+                            <span>(3.9)<i class="fa fa-star"></i></span>
+                          </div>
+                          <hr />
+                          <div class="featured-content-list">
+                            <button
+                              type="button"
+                              data-name="T-shirt"
+                              data-price="700"
+                              class="default-btn border-radius-5"
+                            >
+                              Add to cart
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                      <div class="featured-item">
+                        <div class="featured-item-img">
+                          <a href="#">
+                            <img
+                              src="./seedImages/maize4.jpeg"
+                              alt="Images"
+                            />
+                          </a>
+                        </div>
+                        <div class="content">
+                          <h3><a href="#">Maize 4</a></h3>
+                          <hr />
+                          <div class="content-in">
+                            <h4>₹ 4059</h4>
+                            <span>(4.4)<i class="fa fa-star"></i></span>
+                          </div>
+                          <hr />
+                          <div class="featured-content-list">
+                            <button
+                              type="button"
+                              data-name="Wrap"
+                              data-price="4059"
+                              class="default-btn border-radius-5"
+                            >
+                              Add to cart
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                      <div class="featured-item">
+                        <div class="featured-item-img">
+                          <a href="#">
+                            <img
+                              src="./seedImages/rice 4.jpeg"
+                              alt="Images"
+                            />
+                          </a>
+                        </div>
+                        <div class="content">
+                          <h3><a href="#">Rice 4</a></h3>
+                          <hr />
+                          <div class="content-in">
+                            <h4>₹ 459</h4>
+                            <span>(4.4)<i class="fa fa-star"></i></span>
+                          </div>
+                          <hr />
+                          <div class="featured-content-list">
+                            <button
+                              type="button"
+                              data-name="titan"
+                              data-price="459"
+                              class="default-btn border-radius-5"
+                            >
+                              Add to cart
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs_item">
+                  <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-6">
+                      <div class="featured-item">
+                        <div class="featured-item-img">
+                          <a href="#">
+                            <img src="./seedImages/wheat1.webp" alt="Images" />
+                          </a>
+                        </div>
+                        <div class="content">
+                          <h3><a href="#">Wheat 1</a></h3>
+                          <hr />
+                          <div class="content-in">
+                            <h4>₹ 1200</h4>
+                            <span>(4.9)<i class="fa fa-star"></i></span>
+                          </div>
+                          <hr />
+                          <div class="featured-content-list">
+                            <button
+                              type="button"
+                              data-name="Oxford"
+                              data-price="1200"
+                              class="default-btn border-radius-5"
+                            >
+                              Add to cart
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                      <div class="featured-item">
+                        <div class="featured-item-img">
+                          <a href="#">
+                            <img src="./seedImages/wheat2.jpg" alt="Images" />
+                          </a>
+                        </div>
+                        <div class="content">
+                          <h3><a href="#">Wheat 2</a></h3>
+                          <hr />
+                          <div class="content-in">
+                            <h4>₹ 800</h4>
+                            <span>(4.9)<i class="fa fa-star"></i></span>
+                          </div>
+                          <hr />
+                          <div class="featured-content-list">
+                            <button
+                              type="button"
+                              data-name="Short-Sleeve"
+                              data-price="800"
+                              class="default-btn border-radius-5"
+                            >
+                              Add to cart
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                      <div class="featured-item">
+                        <div class="featured-item-img">
+                          <a href="#">
+                            <img src="./seedImages/wheat3.jpeg" alt="Images" />
+                          </a>
+                        </div>
+                        <div class="content">
+                          <h3><a href="#">Wheat 3</a></h3>
+                          <hr />
+                          <div class="content-in">
+                            <h4>₹ 499</h4>
+                            <span>(4.9)<i class="fa fa-star"></i></span>
+                          </div>
+                          <hr />
+                          <div class="featured-content-list">
+                            <button
+                              type="button"
+                              data-name="Cuban"
+                              data-price="499"
+                              class="default-btn border-radius-5"
+                            >
+                              Add to cart
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                      <div class="featured-item">
+                        <div class="featured-item-img">
+                          <a href="#">
+                            <img src="./seedImages/wheat4.jpeg" alt="Images" />
+                          </a>
+                        </div>
+                        <div class="content">
+                          <h3><a href="#">Wheat 4</a></h3>
+                          <hr />
+                          <div class="content-in">
+                            <h4>₹ 700</h4>
+                            <span>(3.9)<i class="fa fa-star"></i></span>
+                          </div>
+                          <hr />
+                          <div class="featured-content-list">
+                            <button
+                              type="button"
+                              data-name="T-shirt"
+                              data-price="700"
+                              class="default-btn border-radius-5"
+                            >
+                              Add to cart
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs_item">
+                  <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-6">
+                      <div class="featured-item">
+                        <div class="featured-item-img">
+                          <a href="#">
+                            <img
+                              src="./seedImages/maize1.jpeg"
+                              alt="Images"
+                            />
+                          </a>
+                        </div>
+                        <div class="content">
+                          <h3><a href="#"">Maize 1 </a></h3>
+                          <hr />
+                          <div class="content-in">
+                            <h4>₹ 459</h4>
+                            <span>(4.4)<i class="fa fa-star"></i></span>
+                          </div>
+                          <hr />
+                          <div class="featured-content-list">
+                            <button
+                              type="button"
+                              data-name="Tunic"
+                              data-price="459"
+                              class="default-btn border-radius-5"
+                            >
+                              Add to cart
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                      <div class="featured-item">
+                        <div class="featured-item-img">
+                          <a href="#">
+                            <img
+                              src="./seedImages/maize2.jpeg"
+                              alt="Images"
+                            />
+                          </a>
+                        </div>
+                        <div class="content">
+                          <h3><a href="#">Maize 2</a></h3>
+                          <hr />
+                          <div class="content-in">
+                            <h4>₹ 2459</h4>
+                            <span>(4.4)<i class="fa fa-star"></i></span>
+                          </div>
+                          <hr />
+                          <div class="featured-content-list">
+                            <button
+                              type="button"
+                              data-name="Culotte"
+                              data-price="2459"
+                              class="default-btn border-radius-5"
+                            >
+                              Add to cart
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                      <div class="featured-item">
+                        <div class="featured-item-img">
+                          <a href="#">
+                            <img
+                              src="./seedImages/maize3.jpeg"
+                              alt="Images"
+                            />
+                          </a>
+                        </div>
+                        <div class="content">
+                          <h3><a href="#">Maize 3</a></h3>
+                          <hr />
+                          <div class="content-in">
+                            <h4>₹ 1159</h4>
+                            <span>(4.0)<i class="fa fa-star"></i></span>
+                          </div>
+                          <hr />
+                          <div class="featured-content-list">
+                            <button
+                              type="button"
+                              data-name="Babydoll"
+                              data-price="1159"
+                              class="default-btn border-radius-5"
+                            >
+                              Add to cart
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                      <div class="featured-item">
+                        <div class="featured-item-img">
+                          <a href="#">
+                            <img
+                              src="./seedImages/maize4.jpeg"
+                              alt="Images"
+                            />
+                          </a>
+                        </div>
+                        <div class="content">
+                          <h3><a href="#">Maize 4</a></h3>
+                          <hr />
+                          <div class="content-in">
+                            <h4>₹ 4059</h4>
+                            <span>(4.4)<i class="fa fa-star"></i></span>
+                          </div>
+                          <hr />
+                          <div class="featured-content-list">
+                            <button
+                              type="button"
+                              data-name="Wrap"
+                              data-price="4059"
+                              class="default-btn border-radius-5"
+                            >
+                              Add to cart
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs_item">
+                  <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-6">
+                      <div class="featured-item">
+                        <div class="featured-item-img">
+                          <a href="#">
+                            <img
+                              src="./seedImages/rice 1.jpeg"
+                              alt="Images"
+                            />
+                          </a>
+                        </div>
+                        <div class="content">
+                          <h3><a href="#">Rice 1</a> </a></h3>
+                          <hr />
+                          <div class="content-in">
+                            <h4>₹ 4059</h4>
+                            <span>(4.4)<i class="fa fa-star"></i></span>
+                          </div>
+                          <hr />
+                          <div class="featured-content-list">
+                            <button
+                              type="button"
+                              data-name="Huawei"
+                              data-price="4059"
+                              class="default-btn border-radius-5"
+                            >
+                              Add to cart
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                      <div class="featured-item">
+                        <div class="featured-item-img">
+                          <a href="#">
+                            <img
+                              src="./seedImages/rice 2.jpeg"
+                              alt="Images"
+                            />
+                          </a>
+                        </div>
+                        <div class="content">
+                          <h3><a href="#">Rice 2 </a></h3>
+                          <hr />
+                          <div class="content-in">
+                            <h4>₹ 1999</h4>
+                            <span>(4.4)<i class="fa fa-star"></i></span>
+                          </div>
+                          <hr />
+                          <div class="featured-content-list">
+                            <button
+                              type="button"
+                              data-name="FireBoltt"
+                              data-price="1999"
+                              class="default-btn border-radius-5"
+                            >
+                              Add to cart
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                      <div class="featured-item">
+                        <div class="featured-item-img">
+                          <a href="#">
+                            <img
+                              src="./seedImages/rice 3.jpeg"
+                              alt="Images"
+                            />
+                          </a>
+                        </div>
+                        <div class="content">
+                          <h3><a href="#">Rice 3</a></h3>
+                          <hr />
+                          <div class="content-in">
+                            <h4>₹ 2059</h4>
+                            <span>(4.4)<i class="fa fa-star"></i></span>
+                          </div>
+                          <hr />
+                          <div class="featured-content-list">
+                            <button
+                              type="button"
+                              data-name="Google"
+                              data-price="2059"
+                              class="default-btn border-radius-5"
+                            >
+                              Add to cart
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                      <div class="featured-item">
+                        <div class="featured-item-img">
+                          <a href="#">
+                            <img
+                              src="./seedImages/rice 4.jpeg"
+                              alt="Images"
+                            />
+                          </a>
+                        </div>
+                        <div class="content">
+                          <h3><a href="#">Rice 4</a></h3>
+                          <hr />
+                          <div class="content-in">
+                            <h4>₹ 459</h4>
+                            <span>(4.4)<i class="fa fa-star"></i></span>
+                          </div>
+                          <hr />
+                          <div class="featured-content-list">
+                            <button
+                              type="button"
+                              data-name="titan"
+                              data-price="459"
+                              class="default-btn border-radius-5"
+                            >
+                              Add to cart
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <p id="not_found"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="staticBackdrop"
+        data-backdrop="static"
+        data-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Your Cart</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <table class="show-cart table"></table>
+              <div class="grand-total">
+                Total price: ₹<span class="total-cart"></span>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+              <!-- <button type="button" class="btn btn-danger clear-all">Clear All</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- partial -->
+    <script src="https://kit.fontawesome.com/bf520e6492.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./seed.js"></script>
+  </body>
+</html>
