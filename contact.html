@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>agroSearch</title>
     <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/contact.css" />
     <!-- <link rel="stylesheet" href=""> -->
 
     <style>
@@ -30,12 +31,33 @@
           <li><a href="#">Machines</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="./about.html">About Us</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="./contact.html">Contact</a></li>
         </ul>
       </div>
     </nav>
 
-    <div class="main"></div>
+    <div class="main">
+      <form
+        action="post"
+        method="https://docs.google.com/forms/d/e/1FAIpQLSfk8Hf1IVRGh4BZkaU4NLRUeLKvzgv9Y4fgz2BXXw9mrt9fYw/viewform?embedded=true"
+      >
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit">Send</button>
+        </div>
+      </form>
+    </div>
     <footer>
       <div class="footer-content">
         <h3>agroSearch</h3>
