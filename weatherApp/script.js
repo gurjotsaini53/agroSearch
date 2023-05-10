@@ -57,13 +57,12 @@ function weatherDetails(info){
         infoTxt.classList.replace("pending", "error");
         infoTxt.innerText = `${inputField.value} isn't a valid city name`;
     }else{
-        //getting required properties value from the whole weather information
+        
         const city = info.name;
         const country = info.sys.country;
         const {description, id} = info.weather[0];
         const {temp, feels_like, humidity} = info.main;
 
-        // using custom weather icon according to the id which api gives to us
         if(id == 800){
             wIcon.src = "icons/clear.svg";
         }else if(id >= 200 && id <= 232){
@@ -78,7 +77,7 @@ function weatherDetails(info){
             wIcon.src = "icons/rain.svg";
         }
         
-        //passing a particular weather info to a particular element
+      
         weatherPart.querySelector(".temp .numb").innerText = Math.floor(temp);
         weatherPart.querySelector(".weather").innerText = description;
         weatherPart.querySelector(".location span").innerText = `${city}, ${country}`;
